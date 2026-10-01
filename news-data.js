@@ -2,6 +2,11 @@
 
 const NEWS = [
   {
+    date: "2026.09",
+    title: "<strong>지전일</strong> 학생이 2026년 정보보호학회 충청지부 학술대회에서 <strong>한국인터넷진흥원 원장상</strong>을 수상하였습니다.",
+    tag: "Award"
+  },
+  {
     date: "2026.06",
     title: "<strong>지전일</strong>, <strong>양희지</strong> 학생이 제9회 부채널정보분석경진대회에서 <strong>부채널분석연구회장상</strong>을 수상하였습니다.",
     tag: "Award"
