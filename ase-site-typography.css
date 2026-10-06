@@ -1,0 +1,11 @@
+/* ASELab preview fallback — typography from the existing USELab style.css.
+   Source: https://raw.githubusercontent.com/uselab-kus/uselab-kus.github.io/main/style.css
+   Only the font declarations/defaults are copied here, not a new font choice.
+   In mode: "site", the existing root style.css is also loaded automatically.
+   Keep this file for offline review. No font files or external font services. */
+html[data-theme="stanford"] {
+  --font-head: ui-serif, Georgia, serif;
+  --font-body: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+html { scrollbar-gutter: stable; }
+body { font-family: var(--font-body); }
