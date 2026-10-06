@@ -1,191 +1,238 @@
-<!doctype html>
-<html lang="en" data-theme="stanford" class="ase-page">
+<!DOCTYPE html>
+<html lang="en" data-theme="stanford">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Preview only: remove the next line when publishing as index.html. -->
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="ASELab — 지능형 보안공학 연구실. AI를 활용한 보안 기술을 연구하고 안전하고 신뢰할 수 있는 시스템을 설계 및 구현합니다.">
-  <meta name="theme-color" content="#080C11">
-  <title>ASELab — 지능형 보안공학 연구실</title>
-  <link rel="icon" href="assets/aselab/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="ase-site-typography.css">
-  <!-- Live mode loads the existing style.css here, BEFORE the homepage layout CSS. -->
-  <link rel="stylesheet" href="ase-home.css" id="ase-layout-stylesheet">
-  <link rel="preload" href="assets/aselab/hero-detail.webp" as="image">
-  <!-- Same shared typography as the existing pages; no font files are bundled. -->
-  <script src="ase-home-config.js" defer></script>
-  <script src="ase-preview-data.js" defer></script>
-  <script src="ase-home.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>USELab — Security Research Lab</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/USE_logo_white.png" type="image/png" />
 </head>
-<body class="ase-home">
-  <a class="ase-skip" href="#main">본문으로 건너뛰기</a>
+<body>
 
-  <div class="ase-masthead" id="top">
-    <header class="ase-header">
-      <div class="ase-container ase-header-row">
-        <a class="ase-brand" href="#top" aria-label="ASELab 홈">
-          <span class="ase-wordmark"><span>ASE</span>Lab</span>
-          <span class="ase-brand-sub" lang="en">AI and Security<br>Engineering Lab</span>
-        </a>
-        <button class="ase-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav" hidden>
-          <span></span><span></span>
-        </button>
-        <!-- Same labels, order, and destinations as the original index.html. -->
-        <nav class="ase-nav" id="main-nav" aria-label="주 메뉴">
-          <a href="https://uselab.korea.ac.kr/members.html" data-site-path="members.html">Members</a>
-          <a href="https://uselab.korea.ac.kr/publications.html" data-site-path="publications.html">Publications</a>
-          <a href="https://uselab.korea.ac.kr/research.html" data-site-path="research.html">Research</a>
-          <a href="https://uselab.korea.ac.kr/seminars.html" data-site-path="seminars.html">Seminar</a>
-          <a href="https://uselab.korea.ac.kr/contact.html" data-site-path="contact.html">Contact</a>
-        </nav>
-        <!-- This is an affiliation label, NOT a reconstructed university logo.
-             Configure an official original image in ase-home-config.js. -->
-        <a class="ase-university" href="https://sejong.korea.ac.kr/" target="_blank" rel="noopener noreferrer" aria-label="고려대학교 세종캠퍼스 홈페이지">
-          <img class="ase-university-logo" data-university-logo alt="Korea University" hidden>
-          <span class="ase-university-label" data-university-label>
-            <span class="ase-university-name">KOREA UNIVERSITY</span>
-            <span class="ase-university-campus">SEJONG CAMPUS</span>
-          </span>
-        </a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="assets/USE_logo_crimson.png" alt="USELab logo" class="brand-logo" />
+        <span>USELab @ KUS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="members.html">Members</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+        <a href="seminars.html">Seminar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="kicker">Security • AI • Digital Forensics</div>
+      <h1>User-centered SEcurity Lab (USELab)</h1>
+      <p class="lead">
+        The lab is a part of the Department of Artificial Intelligence Cyber Security (AICS),
+        Korea University Sejong Campus (KUS). Our research goal is to develop more secure and usable systems.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="publications.html">See Publications</a>
+        <!-- <a class="btn" href="#contact">Join / Contact</a> -->
+        <!-- <a class="btn" href="join.html">Join</a> -->
+        <a class="btn" href="contact.html">Contact</a>
       </div>
-    </header>
+    </section>
 
-    <main id="main">
-      <!-- HERO: image is decorative; all page titles and copy are actual text. -->
-      <section class="ase-hero" aria-labelledby="hero-title">
-        <div class="ase-hero-art" aria-hidden="true">
-          <!-- Original v4 artwork restored. Only fuzz(input) was renamed to scan(input).
-               Address values, disassembly, code panels, chip and particles are preserved. -->
-          <img src="assets/aselab/hero-detail.webp" width="901" height="429" alt="" fetchpriority="high" decoding="async">
-        </div>
-        <div class="ase-hero-shade" aria-hidden="true"></div>
-        <div class="ase-container ase-hero-inner">
-          <div class="ase-hero-copy">
-            <p class="ase-eyebrow ase-eyebrow-light" lang="en"><span></span> Security enabled by AI</p>
-            <h1 class="ase-hero-title" id="hero-title"><span>ASE</span>Lab</h1>
-            <p class="ase-hero-name" data-english-name lang="en">AI and Security Engineering Lab</p>
-            <p class="ase-hero-ko" data-korean-name lang="ko">지능형 보안공학 연구실</p>
-            <div class="ase-hero-description">
-              <span class="ase-rule" aria-hidden="true"></span>
-              <p lang="ko">AI를 활용한 보안 기술을 연구하고 <br class="ase-desktop-break">안전하고 신뢰할 수 있는 시스템을 설계 및 구현합니다.</p>
-            </div>
-            <div class="ase-hero-actions">
-              <a class="ase-button ase-button-primary" href="#research">Explore our research <span aria-hidden="true">→</span></a>
-              <a class="ase-button ase-button-outline" href="#join">Join ASELab <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="ase-hero-keywords" aria-label="핵심 연구 키워드" lang="en">
-            <span>Software security</span><span>Anomaly detection</span><span>Digital forensics</span>
-          </div>
-          <div class="ase-hero-bottom" lang="en">
-            <span>Design and build <strong>secure systems</strong></span>
-          </div>
-        </div>
-      </section>
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <h2>Research Areas</h2>
 
-      <!-- RESEARCH: proposed copy for review, not an exhaustive scope statement. -->
-      <section class="ase-research ase-section" id="research" aria-labelledby="research-title">
-        <div class="ase-container">
-          <div class="ase-section-heading">
-            <div><p class="ase-eyebrow">What we explore</p><h2 id="research-title">Research areas</h2></div>
-            <a class="ase-text-link" href="https://uselab.korea.ac.kr/research.html" data-site-path="research.html">Projects &amp; research <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="ase-research-grid">
-            <article class="ase-research-item">
-              <div class="ase-research-top"><svg viewBox="0 0 40 40" class="ase-icon" aria-hidden="true"><rect x="5" y="7" width="30" height="26" rx="3"/><path d="M5 14h30M10 10.5h1m3 0h1M15 19l-4 4 4 4m10-8 4 4-4 4m-3-9-4 12"/></svg></div>
-              <h3 lang="en">AI-assisted <br>Software Security</h3>
-              <p lang="ko">AI를 활용한 퍼징과 바이너리·펌웨어 분석으로 소프트웨어의 취약점을 탐지하고 검증합니다.</p>
-              <div class="ase-topic-tags" lang="en"><span>Fuzzing &amp; harness generation</span><span>Binary &amp; firmware analysis</span></div>
-            </article>
-            <article class="ase-research-item">
-              <div class="ase-research-top"><svg viewBox="0 0 40 40" class="ase-icon" aria-hidden="true"><path d="M5 7v27h30M5 25h5l4-7 5 10 7-18 5 13h4"/><circle cx="26" cy="10" r="3.5" fill="var(--ase-paper, #fff)"/><path d="M25 10h2"/></svg></div>
-              <h3 lang="en">Data-driven <br>Anomaly Detection</h3>
-              <p lang="ko">시스템 로그와 시계열 데이터에서 비정상적인 패턴을 탐지하고 데이터와 운용 환경의 변화에 따른 탐지 성능과 신뢰성을 분석합니다.</p>
-              <div class="ase-topic-tags" lang="en"><span>Time-series &amp; log analysis</span><span>Detection reliability</span></div>
-            </article>
-            <article class="ase-research-item">
-              <div class="ase-research-top"><svg viewBox="0 0 40 40" class="ase-icon" aria-hidden="true"><path d="M24 34H7V6h20v9M12 13h10m-10 6h7m-7 6h6"/><circle cx="27" cy="25" r="7"/><path d="m32 30 5 5M24 25h6m-3-3v6"/></svg></div>
-              <h3 lang="en">AI-driven <br>Digital Forensics</h3>
-              <p lang="ko">AI를 활용해 디지털 증거의 탐색과 분석을 지원하고 사건의 흐름을 재구성하는 방법과 분석 결과의 신뢰성을 연구합니다.</p>
-              <div class="ase-topic-tags" lang="en"><span>Evidence analysis</span><span>Event reconstruction</span></div>
-            </article>
-          </div>
-          <p class="ase-research-note" lang="en">Focused, but not limited</p>
-        </div>
-      </section>
+      <div class="grid">
 
-      <!-- NEWS: full-width; populated from the original repository in site mode. -->
-      <section class="ase-updates ase-section" id="news" aria-labelledby="news-title">
-        <div class="ase-container">
-          <div class="ase-section-heading">
-            <div><p class="ase-eyebrow">From the lab</p><h2 id="news-title">Latest news</h2></div>
-            <a class="ase-text-link" href="https://uselab.korea.ac.kr/news.html" data-site-path="news.html">All news <span aria-hidden="true">↗</span></a>
-          </div>
-          <ul class="ase-news-list" id="ase-latest-news"></ul>
-          <p class="ase-data-status" id="ase-news-status" hidden role="status"></p>
-          <noscript><p>최신 소식은 <a href="https://uselab.korea.ac.kr/news.html">기존 뉴스 페이지</a>에서 확인할 수 있습니다.</p></noscript>
+        <div class="card">
+          <h3>Security</h3>
+          <!-- <p>
+            Robust ML, adversarial defense, model behavior analysis,
+            and secure deployment pipelines.
+          </p> -->
+          <ul style="margin-top: 12px;">
+            <li>Data-driven security</li>
+            <li>Anomaly detection</li>
+            <li>Security protocol</li>
+            <li>Threat modeling</li>
+          </ul>
         </div>
-      </section>
 
-      <!-- MEMBERS: original main-page categories and destinations, not an invented roster. -->
-      <section class="ase-members ase-section" id="members" aria-labelledby="members-title">
-        <div class="ase-container">
-          <div class="ase-section-heading">
-            <div><p class="ase-eyebrow">People behind the research</p><h2 id="members-title">Members</h2></div>
-            <a class="ase-text-link" href="https://uselab.korea.ac.kr/members.html" data-site-path="members.html">All members <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="ase-members-grid">
-            <a class="ase-member-card ase-member-card-link" href="https://uselab.korea.ac.kr/members/cho.html" data-site-path="members/cho.html">
-              <span class="ase-member-arrow" aria-hidden="true">↗</span>
-              <h3>Principal Investigator</h3>
-              <p>Geumhwan Cho</p>
-            </a>
-            <a class="ase-member-card ase-member-card-link" href="https://uselab.korea.ac.kr/members.html" data-site-path="members.html">
-              <span class="ase-member-arrow" aria-hidden="true">↗</span>
-              <h3>Students</h3>
-              <p>Graduate &amp; Undergraduate Researchers</p>
-            </a>
-            <!-- The original main-page Alumni card has no destination; keep it non-interactive. -->
-            <div class="ase-member-card">
-              <h3>Alumni</h3>
-              <p>Former lab members</p>
-            </div>
-          </div>
+        <div class="card">
+          <h3>AI-driven Digital Forensics</h3>
+          <!-- <p>
+            Memory analysis, file-system investigation,
+            and automated incident response.
+          </p> -->
+          <ul style="margin-top: 12px;">
+            <li>Memory analysis</li>
+            <li>File-system investigation</li>
+            <li>Automated incident response</li>
+          </ul>
         </div>
-      </section>
 
-      <!-- JOIN: no invented school building or generated institutional logo. -->
-      <section class="ase-join" id="join" aria-labelledby="join-title">
-        <div class="ase-container ase-join-grid">
-          <div class="ase-join-philosophy">
-            <p class="ase-eyebrow ase-eyebrow-light">Work with us</p>
-            <h2 id="join-title" lang="ko">함께 질문하고<br>직접 검증하는 연구</h2>
-            <a href="https://uselab.korea.ac.kr/members/cho.html" data-site-path="members/cho.html" class="ase-pi">Geumhwan Cho <span>Principal Investigator</span><span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="ase-join-info">
-            <p>AI를 활용한 보안 연구를 함께할 <br class="ase-desktop-break">학부 연구생, 석사·박사과정 학생을 모집합니다.</p>
-            <p class="ase-join-detail">관심 분야와 이력서, 성적표를 이메일로 보내주세요.</p>
-            <a class="ase-button ase-button-primary" href="https://uselab.korea.ac.kr/contact.html" data-site-path="contact.html">Contact us <span aria-hidden="true">↗</span></a>
-          </div>
+        <div class="card">
+          <h3>Usable Security</h3>
+          <!-- <p>
+            Designing authentication systems and defenses that
+            users can adopt and trust.
+          </p> -->
+          <ul style="margin-top: 12px;">
+            <li>User authentication</li>
+            <li>User perception</li>
+          </ul>
         </div>
-      </section>
-    </main>
-  </div>
 
-  <footer class="ase-footer">
-    <div class="ase-container">
-      <div class="ase-footer-top">
-        <div class="ase-footer-brand"><a href="#top" class="ase-wordmark"><span>ASE</span>Lab</a><p data-korean-name>지능형 보안공학 연구실</p></div>
-        <div class="ase-footer-affiliation"><p>Korea University Sejong Campus</p><p>Department of AI Cyber Security</p><a href="mailto:geumhwan@korea.ac.kr" data-email-link data-email-label>geumhwan@korea.ac.kr</a></div>
-        <div class="ase-footer-links">
-          <a href="https://uselab.korea.ac.kr/contact.html" data-site-path="contact.html">Contact <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/uselab-kus/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <a href="https://scholar.google.com/citations?user=rWU956cAAAAJ&amp;hl=ko&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- <section id="publications" class="section"> 
+      <h2>Selected Publications</h2> 
+      
+      <ul class="list"> 
+        <li> <span class="tag">2025</span> Paper title — Venue</li> 
+        <li><span class="tag">2024</span> Paper title — Venue</li> 
+        <li><span class="tag">2023</span> Paper title — Venue</li>
+      </ul> 
+      <p class="muted">Tip: 나중에 Google Scholar 링크/DBLP 링크도 여기에 붙이면 “학술 사이트” 느낌 확 살아요.</p> 
+    </section>     -->
+
+
+    <!-- ======================
+         NEWS
+    ====================== -->
+    <section class="section">
+      <h2>News</h2>
+    
+      <ul class="news-list" id="latest-news"></ul>
+    
+      <div style="margin-top:20px;">
+        <a class="btn-small" href="news.html">View All News →</a>
+      </div>
+    </section>
+    
+    <script src="news-data.js"></script>
+    <script>
+      const latestContainer = document.getElementById("latest-news");
+    
+      NEWS.slice(0, 5).forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span class="news-date">${item.date}</span>
+          <span class="news-title">${item.title}</span>
+        `;
+        latestContainer.appendChild(li);
+      });
+    </script>
+
+
+    
+    <!-- MEMBERS -->
+    <section id="members" class="section">
+      <h2>Members</h2>
+
+      <div class="grid">
+        <a href="members/cho.html" class="member-card-link">
+          <div class="card">
+            <h3>Principal Investigator</h3>
+            <p>Geumhwan Cho</p>
+          </div>
+        </a>
+
+        <a href="members.html" class="member-card-link">
+          <div class="card">
+            <h3>Students</h3>
+            <p>Graduate & Undergraduate Researchers</p>
+          </div>
+        </a>
+        
+        <div class="card">
+          <h3>Alumni</h3>
+          <p>Former lab members</p>
         </div>
       </div>
-      <div class="ase-footer-bottom"><p>© <span id="ase-year">2026</span> <span data-lab-name>ASELab</span>. All rights reserved.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+    </section>
+
+    <!-- JOIN / RECRUITMENT -->
+    <section id="join" class="section">
+      <h2>Join USELab</h2>
+
+      <div class="card" style="margin-top: 10px;">
+        <p>
+          We are always looking for talented and motivated undergraduate and graduate students
+          who are interested in security, AI-driven digital forensics, and usable security.
+        </p>
+
+        <ul style="margin-top: 12px;">
+          <li>Strong interest in security research</li>
+          <li>Willingness to conduct independent research</li>
+        </ul>
+
+        <p style="margin-top: 14px;">
+          📧 Please send your CV and transcript to:
+          <strong>geumhwan@korea.ac.kr</strong>
+        </p>
+     
+      </div>
+
+      <div class="card" style="margin-top: 10px;">
+
+        <p>
+          <strong>사용자중심보안연구실</strong>에서는 연구원을 모집합니다. 학부 연구생, 석사, 박사 다 가능합니다.
+        </p>
+        <p>
+          관심있는 사람은 이메일(<strong>geumhwan@korea.ac.kr</strong>)주세요.
+        </p>
+      
+      </div>
+  
+    </section>
+
+    
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <div class="contact">
+        <div>
+          <div class="label">Email</div>
+          <div>geumhwan@korea.ac.kr</div>
+        </div>
+
+        <div>
+          <div class="label">Location</div>
+          <div>Korea University Sejong Campus</div>
+        </div>
+
+        <div>
+          <div class="label">Links</div>
+          <div>
+            <a href="https://github.com/uselab-kus/">GitHub</a> ·
+            <a href="https://scholar.google.com/citations?user=rWU956cAAAAJ&hl=ko&oi=ao">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div style="width: 100%; text-align: center;">Copyright © <span id="y"></span> User-centered SEcurity Lab. @ Korea University Sejong Campus. All Rights Reserved.</div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
